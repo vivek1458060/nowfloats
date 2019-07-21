@@ -1,0 +1,16 @@
+.logo {
+    position: fixed;
+    z-index: 1200;
+    top: 0;
+}
+
+.logo img {
+    width: 120px;
+    margin-left: 60px;
+}
+
+.logo img {
+    @media (max-width: 600px) {
+        margin-left: unset;
+    }
+}
