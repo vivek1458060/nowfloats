@@ -7,7 +7,7 @@ export const getDoctors = (doctors) => ({
 
 export const startGetDoctors = () => {
     return (dispatch, getState) => {
-        axios.get('http://localhost:3000/doctorDetail').then((response) => {
+        axios.get('/doctorDetail').then((response) => {
             dispatch(getDoctors(response.data.doctors))
         }).catch((e) => {
             console.log(e);
