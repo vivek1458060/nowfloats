@@ -12,6 +12,7 @@ const useStyles = makeStyles(theme => ({
     maxWidth: '500px',
     background: 'hsla(0,0%,100%,.85)',
     color: theme.palette.text.secondary,
+    border: '1px solid rgba(0, 0, 0, 0.23)'
   },
   enquiryContainer: {
     margin: theme.spacing(3)

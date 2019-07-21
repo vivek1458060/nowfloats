@@ -4,6 +4,7 @@ import Services from './Services'
 import DoctorIntro from './DoctorIntro'
 import Subscribe from './Subscribe'
 import ContactInfo from './ContactInfo'
+import Footer from './Footer'
 
 export const HomePage = () => (
     <div>
@@ -12,6 +13,7 @@ export const HomePage = () => (
         <DoctorIntro />
         <Subscribe />
         <ContactInfo />
+        <Footer />
     </div>
 );
 

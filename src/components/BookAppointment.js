@@ -9,6 +9,7 @@ import ArrowLeft from "@material-ui/icons/ArrowLeft";
 import IconButton from "@material-ui/core/IconButton";
 import Typography from "@material-ui/core/Typography";
 import Hidden from "@material-ui/core/Hidden";
+import Tooltip from '@material-ui/core/Tooltip';
 
 const currencies = [
   {
@@ -161,24 +162,25 @@ export default function BookAppointment() {
         </Hidden>
         <div style={{ flexGrow: 1 }}>
           <ul className={classes.timeBox}>
-            <li className={classes.timeBox_item}>10:00 AM</li>
-            <li className={classes.timeBox_item}>10:30 AM</li>
-            <li className={classes.timeBox_item}>11:00 AM</li>
+            <Tooltip title={<Typography variant="body2">Slot is available</Typography>} interactive placement="top-end">
+              <li className={classes.timeBox_item}>10:00 AM</li>
+            </Tooltip>
+            <Tooltip title={<Typography variant="body2">Slot is available</Typography>} interactive placement="top-end">
+              <li className={classes.timeBox_item}>10.:30 AM</li>
+            </Tooltip>
+            <li className={classes.timeBox_item} style={{ textDecoration: 'line-through' }}>11:00 AM</li>
           </ul>
           <ul className={classes.timeBox}>
-            <li className={classes.timeBox_item}>11:30 AM</li>
-            <li
-              className={classes.timeBox_item}
-              style={{ background: "#3f51b5", color: "#f5f5f5" }}
-            >
-              12:00 PM
-            </li>
-            <li className={classes.timeBox_item}>12:00 PM</li>
+            <li className={classes.timeBox_item} style={{ textDecoration: 'line-through' }}>11:30 AM</li>
+            <li className={classes.timeBox_item} style={{ textDecoration: 'line-through' }}>12:00 PM</li>
+            <li className={classes.timeBox_item}>-</li>
           </ul>
           <ul className={classes.timeBox}>
-            <li className={classes.timeBox_item}>01:00 PM</li>
-            <li className={classes.timeBox_item}>-</li>
-            <li className={classes.timeBox_item}>-</li>
+            <Tooltip title={<Typography variant="body2">Slot is available</Typography>} interactive placement="top-end">
+              <li className={classes.timeBox_item} style={{ background: "#3f51b5", color: "#f5f5f5" }}>01:00 PM</li>
+            </Tooltip>
+            <li className={classes.timeBox_item} style={{ textDecoration: 'line-through' }}>01:30 PM</li>
+            <li className={classes.timeBox_item} style={{ textDecoration: 'line-through' }}>02:00 PM</li>
           </ul>
         </div>
       </div>
@@ -193,19 +195,27 @@ export default function BookAppointment() {
         </Hidden>
         <div style={{ flexGrow: 1 }}>
           <ul className={classes.timeBox}>
-            <li className={classes.timeBox_item}>10:00 AM</li>
-            <li className={classes.timeBox_item}>10.:30 AM</li>
-            <li className={classes.timeBox_item}>11:00 AM</li>
+            <Tooltip title={<Typography variant="body2">Slot is available</Typography>} interactive placement="top-end">
+              <li className={classes.timeBox_item}>02:30 PM</li>
+            </Tooltip>
+            <li className={classes.timeBox_item}>-</li>
+            <li className={classes.timeBox_item}>-</li>
           </ul>
           <ul className={classes.timeBox}>
-            <li className={classes.timeBox_item}>10:00 AM</li>
-            <li className={classes.timeBox_item}>10.:30 AM</li>
-            <li className={classes.timeBox_item}>11:00 AM</li>
+            <li className={classes.timeBox_item} style={{ textDecoration: 'line-through' }}>04:00 PM</li>
+            <li className={classes.timeBox_item} style={{ textDecoration: 'line-through' }}>04:30 PM</li>
+            <Tooltip title={<Typography variant="body2">Slot is available</Typography>} interactive placement="top-end">
+              <li className={classes.timeBox_item}>5:00 PM</li>
+            </Tooltip>
           </ul>
           <ul className={classes.timeBox}>
-            <li className={classes.timeBox_item}>10:00 AM</li>
-            <li className={classes.timeBox_item}>10.:30 AM</li>
-            <li className={classes.timeBox_item}>11:00 AM</li>
+            <li className={classes.timeBox_item} style={{ textDecoration: 'line-through' }}>05:30 PM</li>
+            <Tooltip title={<Typography variant="body2">Slot is available</Typography>} interactive placement="top-end">
+              <li className={classes.timeBox_item}>06:00 PM</li>
+            </Tooltip>
+            <Tooltip title={<Typography variant="body2">Slot is available</Typography>} interactive placement="top-end">
+              <li className={classes.timeBox_item}>06:30 PM</li>
+            </Tooltip>
           </ul>
         </div>
       </div>
@@ -220,19 +230,27 @@ export default function BookAppointment() {
         </Hidden>
         <div style={{ flexGrow: 1 }}>
           <ul className={classes.timeBox}>
-            <li className={classes.timeBox_item}>10:00 AM</li>
-            <li className={classes.timeBox_item}>10.:30 AM</li>
-            <li className={classes.timeBox_item}>11:00 AM</li>
+            <li className={classes.timeBox_item} style={{ textDecoration: 'line-through' }}>07:00 PM</li>
+            <li className={classes.timeBox_item} style={{ textDecoration: 'line-through' }}>07:30 PM</li>
+            <li className={classes.timeBox_item}>-</li>
           </ul>
           <ul className={classes.timeBox}>
-            <li className={classes.timeBox_item}>10:00 AM</li>
-            <li className={classes.timeBox_item}>10.:30 AM</li>
-            <li className={classes.timeBox_item}>11:00 AM</li>
+            <Tooltip title={<Typography variant="body2">Slot is available</Typography>} interactive placement="top-end">
+              <li className={classes.timeBox_item}>08:30 PM</li>
+            </Tooltip>
+            <Tooltip title={<Typography variant="body2">Slot is available</Typography>} interactive placement="top-end">
+              <li className={classes.timeBox_item}>09:00 PM</li>
+            </Tooltip>
+            <Tooltip title={<Typography variant="body2">Slot is available</Typography>} interactive placement="top-end">
+              <li className={classes.timeBox_item}>09:30 PM</li>
+            </Tooltip>
           </ul>
           <ul className={classes.timeBox}>
-            <li className={classes.timeBox_item}>10:00 AM</li>
-            <li className={classes.timeBox_item}>10.:30 AM</li>
-            <li className={classes.timeBox_item}>11:00 AM</li>
+            <Tooltip title={<Typography variant="body2">Slot is available</Typography>} interactive placement="top-end">
+              <li className={classes.timeBox_item}>10:00 PM</li>
+            </Tooltip>
+            <li className={classes.timeBox_item}>-</li>
+            <li className={classes.timeBox_item}>-</li>
           </ul>
         </div>
       </div>
@@ -243,7 +261,7 @@ export default function BookAppointment() {
         color="primary"
         className={classes.margin}
       >
-        Large
+        Continue
       </Button>
     </div>
   );

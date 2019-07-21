@@ -10,7 +10,7 @@ const useStyles = makeStyles(theme => ({
     padding: theme.spacing(6, 2),
     textAlign: "center",
     boxShadow: "none",
-    color: theme.palette.text.secondary,
+    color: theme.palette.text.secondary
   },
   actionsCont: {
     display: "flex",

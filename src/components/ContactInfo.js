@@ -15,13 +15,14 @@ import CardMedia from "@material-ui/core/CardMedia";
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
-    padding: '40px 0'
+    padding: '40px 0',
   },
   paper: {
     padding: theme.spacing(2),
     textAlign: "center",
     color: theme.palette.text.secondary,
-    boxShadow: 'none'
+    boxShadow: 'none',
+    background: 'none'
   },
   icon: {
     marginRight: theme.spacing(1)
@@ -53,7 +54,7 @@ export default function ContactInfo() {
   return (
     <div className={classes.root}>
       <Grid container spacing={1} justify="center">
-        <Grid item xs="12" md="4" lg="4">
+        <Grid item xs="12" md="4" lg="3">
           <Paper className={classes.paper}>
             <Typography variant="h4" gutterBottom>
               +91 7992356845

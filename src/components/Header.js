@@ -5,9 +5,8 @@ import Toolbar from "@material-ui/core/Toolbar";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
 import SearchIcon from "@material-ui/icons/Search";
-import NavigationIcon from "@material-ui/icons/PhoneInTalk";
+import PhoneInTalkIcon from "@material-ui/icons/PhoneInTalk";
 import CloseIcon from "@material-ui/icons/Close";
-import Fab from "@material-ui/core/Fab";
 import Button from "@material-ui/core/Button";
 import SwipeableDrawer from "@material-ui/core/SwipeableDrawer";
 import List from "@material-ui/core/List";
@@ -18,6 +17,8 @@ import ListItemText from "@material-ui/core/ListItemText";
 import InboxIcon from "@material-ui/icons/MoveToInbox";
 import MailIcon from "@material-ui/icons/Mail";
 import Hidden from "@material-ui/core/Hidden";
+import Avatar from '@material-ui/core/Avatar';
+import Chip from '@material-ui/core/Chip';
 
 const useStyles = makeStyles(theme => ({
   grow: {
@@ -26,9 +27,6 @@ const useStyles = makeStyles(theme => ({
   SearchButton: {
     marginRight: theme.spacing(2),
     marginLeft: theme.spacing(2)
-  },
-  extendedIcon: {
-    marginRight: theme.spacing(1)
   },
   fab: {
     background: "white",
@@ -67,15 +65,11 @@ export default function ButtonAppBar() {
         <Toolbar>
           <div className={classes.grow} />
           <Hidden smDown>
-            <Fab
-              variant="extended"
-              size="small"
-              aria-label="Add"
-              className={classes.fab}
-            >
-              <NavigationIcon className={classes.extendedIcon} />
-              7992356845
-            </Fab>
+            <Chip
+              avatar={<Avatar style={{background: 'none'}}><PhoneInTalkIcon className={classes.extendedIcon} /></Avatar>}
+              label="7992356845"
+              variant="outlined"
+            />
           </Hidden>
           <IconButton
             edge="start"

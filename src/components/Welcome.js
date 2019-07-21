@@ -12,7 +12,7 @@ const useStyles = makeStyles(theme => ({
     flexGrow: 1,
     padding: '66px 0',
     marginTop: '64px',
-    backgroundImage: 'url("/images/d1.jpg")',
+    backgroundImage: 'url("/images/d1.png")',
     backgroundSize: 'cover'
   },
   paper: {
@@ -48,8 +48,8 @@ export default function Welcome() {
               Homeopathic clininc of Dr. Shravan Dixit is located in Jublie
               Hills, Hyderabad.The clinic was established in 2006 and is one of
               the most reput...
-              <Link href="/" className={classes.link}>
-                SEE MORE
+              <Link href="/" className={classes.link} >
+                See more
               </Link>
             </Typography>
             <Fab
